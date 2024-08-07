@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Data of Climate Change</title>
+  <link rel="stylesheet" href="ClimateChange.css">
+</head>
+
+<body>
+
+  <div id="imga">
+    <img id="image" src="LOGO.png" width="70" alt="logo">
+  </div>
+  <nav class="navbar">
+    <a class="active" href="http://127.0.0.1:3000/Climate_Home.html"><i class="fa fa-fw fa-home"></i> Home</a>
+    <a href="#"><i class="fa fa-fw fa-search"></i> Cause</a>
+    <a href="http://127.0.0.1:3000/Climate_Effects.html"><i class="fa fa-fw fa-envelope"></i> Effect</a>
+    <a href="#"><i class="fa fa-fw fa-user"></i> Solution</a>
+    <a href="#"><i class="fa fa-fw fa-user"></i> Data</a>
+  </nav>
+
+  <h1 style="text-align:center">
+    <bold>graphs</bold>
+  </h1>
+
+  <div class="container">
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+      <img src="graph_globalavgsurfacetemp.png" style="width:63%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+      <img src="sta-dgi-blog-chart-2.png" style="width:47%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+      <img src="gistemp_1979-2019_768px.png" style="width:70%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      <img src="Global_Carbon_Emission_by_Type.png" style="width:65%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+      <img src="generations.png" style="width:84%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+      <img src="SR_2023.08.09_climate-change_1.png" style="width:66%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="graph_globalavgsurfacetemp.png" style="width:65%" onclick="currentSlide(1)"
+          alt="slide 1">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="sta-dgi-blog-chart-2.png" style="width:55%" onclick="currentSlide(2)"
+          alt="slide 2">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="gistemp_1979-2019_768px.png" style="width:80%" onclick="currentSlide(3)"
+          alt="slide 3">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Global_Carbon_Emission_by_Type.png" style="width:75%" onclick="currentSlide(4)"
+          alt="slide 4">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="generations.png" style="width:90%" onclick="currentSlide(5)" alt="slide 5">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="SR_2023.08.09_climate-change_1.png" style="width:80%" onclick="currentSlide(6)"
+          alt="slide 6">
+      </div>
+    </div>
+  </div>
+
+
+  <h1 style="text-align:center">About Data</h1>
+
+  <p style="text-align:center">Highlights. Earth's temperature has risen by an average of 0.11° Fahrenheit (0.06°
+    Celsius) per decade since 1850, or about 2° F in total. The rate of warming since 1982 is more than three times as
+    fast: 0.36° F (0.20° C) per decade.2023 was the warmest year since global records began in 1850 by a wide margin.
+    It was 2.12 °F (1.18 °C) above the 20th-century average of 57.0°F (13.9°C).
+    It was 2.43 °F (1.35 °C) above the pre-industrial average (1850-1900).
+    The 10 warmest years in the historical record have all occurred in the past decade (2014-2023).
+  </p>
+
+  <p style="text-align:center">
+    Climate change is affecting our planet in many ways. Average temperatures are increasing; rainfall patterns are
+    shifting; snow lines are retreating; glaciers and ice sheets are melting; permafrost is thawing; sea levels are
+    rising; and severe weather is becoming more frequent.
+  </p>
+
+  <div class="ul">
+    <ul>
+      <li>recycle more</li>
+      <li>plant more trees</li>
+      <li>using less hot water</li>
+      <li>using less energy</li>
+      <li>dont burn your garbage</li>
+    </ul>
+  </div>
+
+  <div id="video">
+    <iframe width="900" height="560" src="https://www.youtube.com/embed/LwRTw_7NNJs"
+      title="Global Warming from 1880 to 2022" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+
+
+
+
+</body>
+
+
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("demo");
+    let cap5ionText = document.getElementById("caption");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+    captionText.innerHTML = dots[slideIndex - 1].alt;
+  }
+</script>
+
+
+</html>

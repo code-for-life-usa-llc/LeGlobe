@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Climate Change!</title>
+       <link rel="stylesheet" href="Climate_Style.css" type="text/css">
+    </head>
+    <body>
+        <div id="imga">
+        <img src="LOGO.png" alt="LOGO" width="70">
+        </div>
+        <div class="navbar">
+            <a class="active" href="http://127.0.0.1:3000/Climate_Home.html"><i class="fa fa-fw fa-home"></i> Home</a>
+            <a href="http://127.0.0.1:3000/Climate_Cause.html"><i class="fa fa-fw fa-search"></i> Cause</a>
+            <a href="http://127.0.0.1:3000/Climate_Effects.html"><i class="fa fa-fw fa-envelope"></i> Effect</a>
+            <a href="#"><i class="fa fa-fw fa-user"></i> Solution</a> 
+            <a href="#"><i class="fa fa-fw fa-user"></i> Data</a>
+        </div>
+        <img src="Climate1-1100x733.jpg" alt=" EARTH" width="700" id="image">
+        <div class="divs">
+         <h1 class="p">What is Climate Change?</h1>
+         <p class="p"> -Climate change is a very severe case that is affecting many parts of the world but mostly to Antartica. Climate Change mostly refers to a long-term change in the average 
+            <br>weather patterns that have come to define Earth's local,regional and global climates. This can and will be lethal to our planet since many living things such as humans 
+            <br> can't survive the very hot temperatures.Climate change has a range of lesser-known impacts, including ocean acidification, exacerbation of social and economic inequalities,
+            <br>changes in precipitation patterns affecting agriculture and water resources, release of methane from thawing permafrost, and impacts on human health. This critical issue 
+            <br> is primarily driven by human activities such as burning fossil fuels and deforestation, leading to rising temperatures, sea levels, and extreme weather. Addressing this
+            <br> challenge requires global action to reduce emissions and transition to sustainable energy sources.</p>
+        </div>
+        <div class="divs">
+            <h2 class="p">Why is Climate change important?</h2>
+            <p class="p">-Climate change is important because it has significant and far-reaching impacts on the environment, human health, economies, and societies. It affects natural ecosystems, 
+            <br>contributes to extreme weather events, and poses risks to food and water supplies. Addressing climate change is crucial for ensuring a sustainable and habitable planet 
+            <br> for current and future generations. In addition to the dangers mentioned earlier, climate change can also lead to rising sea levels, which threaten coastal communities and 
+            <br>ecosystems. It can disrupt agriculture, trade, and industry, leading to economic instability and affecting livelihoods worldwide. Addressing climate change requires global 
+            <br> efforts to transition to renewable energy sources and build resilience in the face of ongoing changes. Climate change is important because it has significant and far-reaching 
+            <br>impacts on the environment, human health, economies, and societies. It affects natural ecosystems, contributes to extreme weather events, and poses risks to food and water 
+            <br>supplies. Addressing climate change is crucial for ensuring a sustainable and habitable planet for current and future generations.</p>
+        </div>
+        <div id="div">
+            <button onclick="typeWriter()">Click me</button>
+            <h2 id="demo" class="p"></h2>
+            <ol id="h2">
+                <li class="p"> Climate change is causing shifts in wildlife populations and habitats worldwide.</li>
+                <li class="p">The Artic is warming at more than twice th eglobal average rate, leading to melting ice and changing ecosystems. </li>
+                <li class="p"> Climate Change contributes to more intense and frequent extreme weather events, such as hurricanes, and heavy rainfall.</li>
+                <li class="p"> The oceans have absorbed much of the excess heat caused by climate change, leading to ocean acidification.</li>
+                <li class="p">Climate change is causing shifts in agricultural patterns and affecting food production in many regions.</li>
+                <li class="p">Rising sea levels are a direct result of climate change, threatening coastal communities and habitats.</li>
+                <li class="p">The loss of polar ice caps and glaciers is contributing to rising sea levels, impacting global water resources.</li>
+                <li class="p">Climate change can exacerbate existing health problems and create new health challenges for communities around the world.</li>
+            </ol>
+            <script>
+                var i = 0;
+                var txt = 'Fun Facts:';
+                var speed = 50;
+                
+                function typeWriter() {
+                  if (i < txt.length) {
+                    document.getElementById("demo").innerHTML += txt.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, speed);
+                  }
+                }
+                </script>
+        </div>
+       
+    </body>
+</html>
