@@ -1,9 +1,3 @@
-.navbar {
-    width: 100%;
-    background-color: rgb(89, 61, 51);
-    overflow: auto;
-  }
-  
   .navbar a {
     float: left;
     text-align: center;
@@ -11,6 +5,15 @@
     color: rgb(170,141,128);
     text-decoration: none;
     font-size: 17px;
+    background-color: rgb(89, 61, 51);
+  }
+
+  .navbar {
+    width: 100%;
+    background-color: rgb(89, 61, 51);
+    overflow: auto;
+    position: fixed;
+    top: 0;
   }
   
   .navbar a:hover {
@@ -22,11 +25,11 @@
   }
   
   #image{
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  border: 10px solid rgb(100, 70, 55) ;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 10px solid rgb(100, 70, 55) ;
   }
   
   body{
@@ -39,6 +42,7 @@
     background-image:url(NATURE.jpg);
     background-repeat: no-repeat;
     background-size:cover;
+    padding-top: 50px;
   }
 
   .p{
